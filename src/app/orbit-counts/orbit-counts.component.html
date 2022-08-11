@@ -1,6 +1,19 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
+	<div>Total: <span 
+		class="counts-total">{{satellites.length}}</span></div>
+	<div>Space Debris: <span>{{countByType('Space Debris')}}</span></div>
+	<div>Communication:<span>{{countByType('Communication')}}</span></div>
+	<div>Probe:<span>{{countByType('Probe')}}</span></div>
+	<div>Positioning:<span>{{countByType('Positioning')}}</span></div>
+	<div>Space Station:<span>{{countByType('Space Station')}}</span></div>
+	<div>Telescope:<span>{{countByType('Telescope')}}</span></div>
 </div>
 
 <!-- TODO 4: add logic to count number of satellites displayed -->
+<td [class.warning]="satellite.isSpaceDebris()">{{satellite.type}}</td>
+
+<!-- // write function to bring parameter of type: string to return a number.
+// initialize a variable called "count" ex let count = 0
+// loop through the collection satellites to check if this.satellite type equals type given by paramenter, add one to the count.
+// return count after the looping -->
