@@ -50,3 +50,7 @@ describe('OrbitCountsComponent', () => {
 
 	});
 });
+// write function to bring parameter of type: string to return a number.
+// initialize a variable called "count" ex let count = 0
+// loop through the collection satellites to check if this.satellite type equals type given by paramenter, add one to the count.
+// return count after the looping
